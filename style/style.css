@@ -1,0 +1,59 @@
+body{
+    height: 100vh;
+}
+main{
+    height: 85vh;
+    margin: 0;
+    text-align: center;
+    /*overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;*/
+}
+
+h1 {
+    color: darkolivegreen;
+}
+
+select {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/*HEADER*/
+header {
+    height: 5vh;
+    margin: 0;
+    line-height: 5vh;
+    background-color: darkolivegreen;
+}
+
+ul {
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    font-size : 1.2em;
+}
+
+a:visited, a:link, a:focus, a:active{
+    text-decoration: none;
+    color: white;
+    font-size : 1.2em;
+}
+
+/*FOOTER*/
+footer{
+    height: 5vh;
+    margin: 0;
+    line-height: 5vh;
+    text-align: center;
+    background-color: darkolivegreen;
+    color: white;
+}
