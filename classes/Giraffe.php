@@ -4,8 +4,4 @@ class Giraffe extends Animal {
     {
         parent :: __construct($name, $words);
     }
-    public function getName()
-    {
-        return $this->_name;
-    }
 }

@@ -1,12 +1,26 @@
 <?php
 
 class Visitor {
-    protected $_name;
-    protected $_isAlive;
+    private $_name;
+    private $_isAlive;
+    private $_animalFood = 1;
 
     public function __construct($name)
     {
         $this->_name = $name;
+    }
+
+    public function feedAnimal($target)
+    {
+        $target->setIsHungry(false);
+        echo "<p>" . $this->_name . " a donné à manger à " . $target->getName() . " ! </p>";
+        $this->setAnimalFood();
+
+    }
+
+    public function setAnimalFood()
+    {
+        $this->_animalFood -=1;
     }
 
     public function getName()
@@ -26,5 +40,10 @@ class Visitor {
         } else {
             echo "<p>" . $this->_name . " est mort ! </p>";
         }
+    }
+
+    public function getAnimalFood()
+    {
+        return $this->_animalFood;
     }
 }
